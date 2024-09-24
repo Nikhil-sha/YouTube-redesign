@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>YouTube</title>
+
+	<!-- Tailwind -->
+	<script src="https://cdn.tailwindcss.com/"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+	<main class="mb-12 mx-2 mt-2 flex flex-col gap-4">
+		<div class="w-full">
+			<ul class="w-full overflow-x-auto rounded-lg flex flex-row gap-2 p-2 bg-white">
+				<li class="px-2 py-1 rounded-md bg-gray-200">
+					<a class="hover:underline text-md hover:cursor-pointer" href="">music</a>
+				</li>
+				<li class="px-2 py-1 rounded-md bg-gray-200">
+					<a class="hover:underline text-md hover:cursor-pointer" href="">gaming</a>
+				</li>
+				<li class="px-2 py-1 rounded-md bg-gray-200">
+					<a class="hover:underline text-md hover:cursor-pointer" href="">science</a>
+				</li>
+				<li class="px-2 py-1 rounded-md bg-gray-200">
+					<a class="hover:underline text-md hover:cursor-pointer" href="">sports</a>
+				</li>
+				<li class="px-2 py-1 rounded-md bg-gray-200">
+					<a class="hover:underline text-md hover:cursor-pointer" href="">entertainment</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="w-full h-64 bg-[url('https://picsum.photos/1024')] bg-cover rounded-lg overflow-hidden">
+			<div class="w-full h-full p-4 backdrop-blur-lg flex flex-col justify-center items-center gap-2">
+				<h2 class="text-2xl text-white font-bold">Search your interest on YouTube...</h2>
+				<input type="text" class="w-full p-2 text-sm rounded-lg bg-gray-100 outline-none focus:ring-2 ring-red-500" name="search" placeholder="Search for it..." id="search" />
+				<button class="w-full p-2 text-sm font-semibold bg-red-500 hover:bg-red-700 rounded-lg text-white">Search</button>
+			</div>
+		</div>
+
+		<div id="feed-container" class="w-full max-h-full flex flex-col gap-4">
+
+			<!-- Skeleton -->
+			<div class="w-full bg-white p-4 rounded-lg">
+				<div class="relative">
+					<div class="w-full rounded-lg aspect-video overflow-hidden relative bg-gray-200">
+					</div>
+					<div class="absolute -bottom-6 left-4 w-12 h-12 bg-gray-200 rounded-full overflow-hidden border-2 border-gray-300">
+					</div>
+				</div>
+				<div class="mt-8">
+					<h2 class="block w-full rounded-lg p-3 bg-gray-200 mb-2"></h2>
+					<p class="block w-20 rounded-lg p-1.5 bg-gray-200"></p>
+					<div class="flex justify-between items-center text-sm text-gray-500 mt-2">
+						<span class="block w-20 rounded-lg p-2 bg-gray-200"></span>
+						<span class="block w-24 rounded-lg p-2 bg-gray-200"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-full bg-white p-4 rounded-lg">
+				<div class="relative">
+					<div class="w-full rounded-lg aspect-video overflow-hidden relative bg-gray-200">
+					</div>
+					<div class="absolute -bottom-6 left-4 w-12 h-12 bg-gray-200 rounded-full overflow-hidden border-2 border-gray-300">
+					</div>
+				</div>
+				<div class="mt-8">
+					<h2 class="block w-full rounded-lg p-3 bg-gray-200 mb-2"></h2>
+					<p class="block w-20 rounded-lg p-1.5 bg-gray-200"></p>
+					<div class="flex justify-between items-center text-sm text-gray-500 mt-2">
+						<span class="block w-20 rounded-lg p-2 bg-gray-200"></span>
+						<span class="block w-24 rounded-lg p-2 bg-gray-200"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-full bg-white p-4 rounded-lg">
+				<div class="relative">
+					<div class="w-full rounded-lg aspect-video overflow-hidden relative bg-gray-200">
+					</div>
+					<div class="absolute -bottom-6 left-4 w-12 h-12 bg-gray-200 rounded-full overflow-hidden border-2 border-gray-300">
+					</div>
+				</div>
+				<div class="mt-8">
+					<h2 class="block w-full rounded-lg p-3 bg-gray-200 mb-2"></h2>
+					<p class="block w-20 rounded-lg p-1.5 bg-gray-200"></p>
+					<div class="flex justify-between items-center text-sm text-gray-500 mt-2">
+						<span class="block w-20 rounded-lg p-2 bg-gray-200"></span>
+						<span class="block w-24 rounded-lg p-2 bg-gray-200"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-full bg-white p-4 rounded-lg">
+				<div class="relative">
+					<div class="w-full rounded-lg aspect-video overflow-hidden relative bg-gray-200">
+					</div>
+					<div class="absolute -bottom-6 left-4 w-12 h-12 bg-gray-200 rounded-full overflow-hidden border-2 border-gray-300">
+					</div>
+				</div>
+				<div class="mt-8">
+					<h2 class="block w-full rounded-lg p-3 bg-gray-200 mb-2"></h2>
+					<p class="block w-20 rounded-lg p-1.5 bg-gray-200"></p>
+					<div class="flex justify-between items-center text-sm text-gray-500 mt-2">
+						<span class="block w-20 rounded-lg p-2 bg-gray-200"></span>
+						<span class="block w-24 rounded-lg p-2 bg-gray-200"></span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+	<script type="module" src="scripts/main.js"></script>
+	<script type="module" src="scripts/feed.js"></script>
+</body>
+
+</html>
