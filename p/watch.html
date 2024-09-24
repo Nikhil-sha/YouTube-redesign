@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Tailwind -->
+	<script src="https://cdn.tailwindcss.com/"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+	<main class="mb-12">
+		<div class="w-full p-2 flex flex-col gap-2">
+			<div class="sticky top-14 w-full aspect-video rounded-lg overflow-hidden bg-white">
+				<iframe id="iframe" class="w-full h-full bg-black" src="" frameborder="0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+			</div>
+			<details class="marker:content-none bg-white rounded-lg p-2">
+				<summary>
+					<h1 id="title" class="text-lg font-semibold leading-tight text-gray-900">...</h1>
+					<div class="flex flex-row justify-between items-center text-xs text-gray-500 mt-1">
+						<span id="views"></span>
+						<span id="uploadDate"></span>
+					</div>
+				</summary>
+				<hr class="my-2" />
+				<pre id="description" class="w-full text-sm rounded-lg p-2 bg-gray-100 text-wrap break-words"></pre>
+			</details>
+			<div class="bg-white w-full rounded-lg p-2 flex flex-row items-center gap-2">
+				<div class="w-8 h-8 rounded-full overflow-hidden">
+					<img class="object-cover" src="https://picsum.photos/100" alt="channel logo">
+				</div>
+				<div>
+					<h2 id="channel" class="font-semibold leading-none">...</h2>
+					<p class="mt-1 text-sm text-gray-500 leading-none">...</p>
+				</div>
+				<div class="grow"></div>
+				<button class="text-white font-semibold px-3 py-1 bg-red-500 hover:bg-red-700 rounded-full" onclick="alert('You clicked the subscribe button!')">subscribe</button>
+			</div>
+			<div class="bg-white rounded-lg py-2 flex justify-around items-center">
+				<button class="flex gap-1 items-center text-sm px-2 py-1 border border-gray-200 hover:bg-gray-200 rounded-full" onclick="alert('You clicked like button!')"><i class="fas fa-thumbs-up"></i>like</button>
+				<button class="flex gap-1 items-center text-sm px-2 py-1 border border-gray-200 hover:bg-gray-200 rounded-full" onclick="alert('You clicked dislike button!')"><i class="fas fa-thumbs-down"></i>dislike</button>
+				<button class="flex gap-1 items-center text-sm px-2 py-1 border border-gray-200 hover:bg-gray-200 rounded-full" onclick="alert('You clicked save button!')"><i class="fas fa-circle-plus"></i>save</button>
+				<button class="flex gap-1 items-center text-sm px-2 py-1 border border-gray-200 hover:bg-gray-200 rounded-full" onclick="alert('You clicked share button!')"><i class="fas fa-share"></i>share</button>
+			</div>
+			<details class="marker:content-none bg-white rounded-lg p-2">
+				<summary>
+					<h3 class="text-md font-semibold leading-tight text-gray-900"><i class="fas fa-comment mr-1"></i>Comments</h3>
+				</summary>
+				<hr class="my-2" />
+				<div class="w-full flex flex-col h-60">
+					<div class="grow w-full overflow-scroll rounded-lg divide-gray-100 divide-y">
+
+					</div>
+					<div class="w-full bg-transparent pt-2">
+						<input type="text" placeholder="Say something..." onkeypress="{alert('You commented: ' + this.value); this.value = '';}" class="w-full p-2 border border-gray-200 outline-none focus:ring-2 rounded-lg" />
+					</div>
+				</div>
+			</details>
+		</div>
+
+	</main>
+
+	<script type="module" src="/YouTube-redesign/scripts/main.js"></script>
+	<script type="module" src="/YouTube-redesign/scripts/watch.js"></script>
+</body>
+
+</html>
